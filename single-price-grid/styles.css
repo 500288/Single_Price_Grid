@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Karla', sans-serif;  
+    background-color:  hsl(204, 43%, 93%);
+   
+}
+
+main{
+    display: grid;
+    place-items: center;
+    min-height:100vh;
+}
+.container{
+    max-width: 16rem;
+   margin: 0; 
+}
+/* invite */
+.invite{
+    padding: 0.625rem;
+    background-color: #ffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+.invite h1{
+    color: hsl(179, 62%, 43%);
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.invite h2{
+    color: hsl(71, 73%, 54%);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding-left: 0.5rem;
+}
+.invite p{
+    color: hsla(217, 22%, 67%, 0.856);
+    line-height: 1.9em;
+    font-weight: 400;
+    font-size: 0.75rem;
+    padding-left: 0.5rem;
+    
+}
+
+/* subscription */
+
+.subscription{
+    background-color: hsl(179, 62%, 43%);
+    padding:0.625rem;
+
+} 
+.subscription h1{
+    font-size: 0.89rem;
+    color: rgba(255, 255, 255, 0.929);
+    font-weight: 700;
+    margin-top: 0.4rem;
+    padding-left: 0.5rem;
+    
+}
+
+.subscription  .amount {
+    color:  hsl(0, 0%, 100%);  
+    font-weight: 400; 
+    font-size: 1.50rem;
+    margin: 0;
+    padding-left: 0.5rem;
+}
+
+.amount span{
+    color:hsla(203, 44%, 93%, 0.646) ;
+    font-size: 0.7rem;
+    margin-left:0.3em;
+}
+
+.subscription p{
+   font-size: 0.76rem;
+   color:  hsla(203, 44%, 93%, 0.966); 
+   margin: 0.5rem 0 1.5rem 0;
+   padding-left: 0.5rem;
+}
+.btn{
+    
+    min-width: 90%;
+    padding: 0.625rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+    color:  hsl(225, 100%, 98%);
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 2.5px;
+    box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.1);
+    border: none;
+    margin: -0.3rem 0.5rem 0.5rem 0.5rem; 
+    cursor: pointer;   
+}
+.btn:active,
+.btn:hover{
+    background-color: hsla(71, 73%, 54%, 0.863);
+}
+/* reasons */
+.reason{
+    background-color: hsla(179, 45%, 53%, 0.946);
+    padding: 0.625rem;
+    color:  hsl(0, 0%, 100%);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.reason h1{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+.lists{
+    margin-top: 1rem;
+    color:hsla(203, 44%, 93%, 0.759) ;
+    list-style: none;
+    margin-left: -1.9rem;
+}
+.lists li{
+    font-size: 0.76rem;
+}
+/* footer */
+.attribution{
+    bottom: 0rem;
+    text-align: center;
+    margin-top: -0.9rem;
+    font-weight: 400;
+    font-size: 0.79rem;
+}
+.attribution a{
+ color:black;
+}
+/* media query */
+@media screen and (min-width: 868px){ 
+    .container{
+        display: grid;
+        max-width: 32rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10em 1fr;
+    }
+    .invite{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding:1.2rem 2rem 0rem 1.5rem;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+    }
+    .invite p{
+        margin-top:-0.3rem;
+        font-size: 0.8rem;
+    }
+    .subscription{
+        padding: 1rem 1.5rem 0.52rem 1rem;
+        border-bottom-left-radius: 5px;
+    }
+    .reason{
+        padding: 1rem 1.5rem 0.52rem 1rem;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+    .attribution{
+        margin-top: -6.9rem;
+    }
+}
